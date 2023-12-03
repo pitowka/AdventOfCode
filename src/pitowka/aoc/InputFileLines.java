@@ -17,6 +17,7 @@ public class InputFileLines {
         return new Scanner(
             Objects.requireNonNull(
                 InputFileLines.class.getResourceAsStream(resourcePath)))
+                .useDelimiter("\n")
             .tokens();
     }
 }
