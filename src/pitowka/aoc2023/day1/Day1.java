@@ -1,28 +1,28 @@
 package pitowka.aoc2023.day1;
 
+import pitowka.aoc.InputFileLines;
+
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Scanner;
 import java.util.regex.Pattern;
-import java.util.stream.Stream;
 
-public class Day1_1 {
+public class Day1 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
         System.err.println(
-            new Scanner(Objects.requireNonNull(Day1_1.class.getResourceAsStream("/day1.txt")))
-                .tokens()
-                    .map(NumberFromString::new)
-                    .mapToInt(NumberFromString::number)
-                    .sum()
+            new InputFileLines("/day1.txt")
+                .lines()
+                .map(NumberFromString::new)
+                .mapToInt(NumberFromString::number)
+                .sum()
         );
 
         System.err.println(
-            new Scanner(Objects.requireNonNull(Day1_1.class.getResourceAsStream("/day1.txt")))
-                .tokens()
+            new InputFileLines("/day1.txt")
+                .lines()
                 .map(NumberFromText::new)
                 .mapToInt(NumberFromText::number)
                 .sum()
