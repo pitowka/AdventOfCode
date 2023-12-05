@@ -2,11 +2,8 @@ package pitowka.aoc2023.day1;
 
 import pitowka.aoc.InputFileLines;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
-import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class Day1 {

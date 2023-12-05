@@ -2,7 +2,6 @@ package pitowka.aoc2023.day2;
 
 import pitowka.aoc.InputFileLines;
 
-import java.io.IOException;
 import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -10,7 +9,7 @@ import java.util.stream.Stream;
 
 public class Day2 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         System.err.println(
             new InputFileLines("/day2.txt")
                 .lines()
@@ -33,8 +32,7 @@ public class Day2 {
         );
 
     }
-
-    //Game 1: 7 blue, 6 green, 3 red; 3 red, 5 green, 1 blue; 1 red, 5 green, 8 blue; 3 red, 1 green, 5 blue
+    
     public static class Game {
         private static final Pattern GAME_PATTERN = Pattern.compile("Game (\\d+): (.*;?)");
 
