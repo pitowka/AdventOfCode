@@ -2,7 +2,9 @@ package pitowka.aoc2023.day2;
 
 import pitowka.aoc.InputFileLines;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -32,7 +34,7 @@ public class Day2 {
         );
 
     }
-    
+
     public static class Game {
         private static final Pattern GAME_PATTERN = Pattern.compile("Game (\\d+): (.*;?)");
 
