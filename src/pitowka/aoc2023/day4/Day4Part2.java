@@ -77,12 +77,6 @@ public class Day4Part2 {
                 Arrays.stream(mr.group(3).split("\\s+")).map(Integer::valueOf).collect(Collectors.toSet()));
         }
 
-        public Integer value() {
-            long count = count();
-
-            return count > 0 ? 1 << count - 1 : 0;
-        }
-
         public Integer count() {
             return Integer.valueOf(
                 String.valueOf(
