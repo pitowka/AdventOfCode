@@ -18,4 +18,12 @@ public class InputFileLines {
                 .useDelimiter("\n")
             .tokens();
     }
+
+    public String asString(){
+        return new Scanner(
+            Objects.requireNonNull(
+                InputFileLines.class.getResourceAsStream(resourcePath)))
+                .useDelimiter("\\Z")
+            .next();
+    }
 }
