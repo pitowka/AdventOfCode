@@ -27,7 +27,7 @@ public class Day4Part2 {
 
         System.err.println(
             new AllCards(
-                new InputFileLines("/day4.txt")
+                new InputFileLines("/aoc2023/day4.txt")
                     .lines()
                     .map(Card::new)
                     .toList()

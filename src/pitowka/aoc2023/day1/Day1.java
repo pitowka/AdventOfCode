@@ -10,7 +10,7 @@ public class Day1 {
 
     public static void main(String[] args){
         System.err.println(
-            new InputFileLines("/day1.txt")
+            new InputFileLines("/aoc2023/day1.txt")
                 .lines()
                 .map(NumberFromString::new)
                 .mapToInt(NumberFromString::number)
@@ -18,7 +18,7 @@ public class Day1 {
         );
 
         System.err.println(
-            new InputFileLines("/day1.txt")
+            new InputFileLines("/aoc2023/day1.txt")
                 .lines()
                 .map(NumberFromText::new)
                 .mapToInt(NumberFromText::number)

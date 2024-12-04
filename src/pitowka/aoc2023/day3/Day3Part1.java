@@ -13,7 +13,7 @@ public class Day3Part1 {
     public static void main(String[] args) {
         System.err.println(
             new PartMap(
-                new InputFileLines("/day3.txt")
+                new InputFileLines("/aoc2023/day3.txt")
                     .lines()
                     .toList())
                 .realPartNumbers().stream()

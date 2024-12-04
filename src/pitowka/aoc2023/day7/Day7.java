@@ -1,9 +1,8 @@
 package pitowka.aoc2023.day7;
 
 import pitowka.aoc.InputFileLines;
-import pitowka.aoc2023.day7.Card.*;
+
 import java.util.List;
-import java.util.stream.Stream;
 
 public class Day7 {
     public static void main(String[] args) {
@@ -17,7 +16,7 @@ public class Day7 {
 //            .sorted()
 //            .toList();
 
-        List<Hand> hands = new InputFileLines("/day7.txt")
+        List<Hand> hands = new InputFileLines("/aoc2023/day7.txt")
             .lines()
             .map(Hand::new)
             .sorted()

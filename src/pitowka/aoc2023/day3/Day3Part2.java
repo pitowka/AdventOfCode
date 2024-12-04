@@ -35,7 +35,7 @@ public class Day3Part2 {
 
         System.err.println(
             new GearMap(
-                new InputFileLines("/day3.txt")
+                new InputFileLines("/aoc2023/day3.txt")
                     .lines()
                     .toList())
                 .realGears()

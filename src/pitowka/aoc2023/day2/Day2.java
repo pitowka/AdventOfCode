@@ -13,7 +13,7 @@ public class Day2 {
 
     public static void main(String[] args) {
         System.err.println(
-            new InputFileLines("/day2.txt")
+            new InputFileLines("/aoc2023/day2.txt")
                 .lines()
                 .map(Game::new)
                 .filter(g -> g.isPossible(Map.of(
@@ -25,7 +25,7 @@ public class Day2 {
         );
 
         System.err.println(
-            new InputFileLines("/day2.txt")
+            new InputFileLines("/aoc2023/day2.txt")
                 .lines()
                 .map(Game::new)
                 .map(Game::minimum)

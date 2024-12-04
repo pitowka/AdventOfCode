@@ -16,7 +16,7 @@ public class Day5 {
         System.err.println(
             new GardenMap(
                 new SeedPart2Supplier(),
-                new InputFileLines("/day5_example.txt")
+                new InputFileLines("/aoc2023/day5_example.txt")
                     .asString())
                 .locations()
                 .min(BigInteger::compareTo)
@@ -25,7 +25,7 @@ public class Day5 {
 
         System.err.println(
             new GardenMap(new SeedPart1Supplier(),
-                new InputFileLines("/day5.txt")
+                new InputFileLines("/aoc2023/day5.txt")
                     .asString())
                 .locations()
                 .min(BigInteger::compareTo)
@@ -34,7 +34,7 @@ public class Day5 {
 
         System.err.println(
             new GardenMap(new SeedPart2Supplier(),
-                new InputFileLines("/day5.txt")
+                new InputFileLines("/aoc2023/day5.txt")
                     .asString())
                 .locations()
                 .min(BigInteger::compareTo)

@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class Day4Part1 {
     public static void main(String[] args) {
         System.err.println(
-            new InputFileLines("/day4.txt")
+            new InputFileLines("/aoc2023/day4.txt")
                 .lines()
                 .map(Card::new)
                 .mapToInt(Card::value)
