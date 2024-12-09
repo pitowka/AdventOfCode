@@ -1,4 +1,4 @@
-package pitowka.aoc2024.day3.day2;
+package pitowka.aoc2024.day3;
 
 import pitowka.aoc.InputFileLines;
 
